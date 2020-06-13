@@ -10,4 +10,4 @@ WORKDIR /app
 RUN apk add --no-cache nodejs
 COPY --from=stage1 /app/ /app/
 CMD ["node", "index.js"]
-RUN echo "Hi Ashish" >> /tmp/vari
+#RUN echo "Hi Ashish" >> /tmp/vari
